@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Tic Tac Toe Game</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+  
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+    <div><span class="dot"></span></div>
+</div>
+
+
+<!-- Page 1: Start or Exit -->
+<div id="page1" class="container"> 
+  <h1>UNDER THE SEA</h1>
+  <h1>TIC TAC TOE</h1>
+  <p> Play Tic-Tac-Toe against another player or the computer. <br> 5x6 board size and different computer strength!</p>
+  <button class="button start-button" onclick="openPage2()">Start</button>
+  <br>
+  <button class="button exit-button" onclick="exitGame()">Exit</button>
+  <div id="footer"> Alicum, Gil Archaun | Deligero, Travis | Olivar, Charlemagne | Gonatice, Jan Kirby </div>
+</div>
+
+<!-- Page 2: A.I or Human -->
+<div id="page2" class="container screen">
+  <button class="button back-button" onclick="goBack()">Back</button>
+  <br><br><br><br><br>
+  <h1>Choose your Opponent:</h1>
+  <br><br><br><br>
+  <button class="button human-button" onclick="startHumanGame()">Human</button>
+  <br><br><br>
+  <button class="button ai-button" onclick="showDifficultyPopup()">A.I</button>
+  <div id="footer"> Alicum, Gil Archaun | Deligero, Travis | Olivar, Charlemagne | Gonatice, Jan Kirby </div>
+</div>
+
+<!-- AI Difficulty Popup -->
+<div id="aiDifficultyPopup" class="container screen">
+  <button class="button back-button" onclick="goBack()">Back</button>
+  <br><br><br><br><br>
+  <h1>Select AI Difficulty:</h1>
+  <br><br><br>
+  <button class="button easy-button" onclick="startAIGame('Easy')">Easy</button>
+  <br><br><br><br>
+  <button class="button difficult-button" onclick="startAIGame('Difficult')">Difficult</button>
+  <br><br><br><br>
+  <button class="button expert-button" onclick="startAIGame('Expert')">Expert</button>
+  <div id="footer"> Alicum, Gil Archaun | Deligero, Travis | Olivar, Charlemagne | Gonatice, Jan Kirby </div>
+</div>
+</body>
+</html>
